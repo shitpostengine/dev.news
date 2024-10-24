@@ -1,0 +1,41 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой Сайт</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        nav { margin-bottom: 20px; }
+        button { margin-right: 10px; }
+    </style>
+</head>
+<body>
+
+<nav>
+    <button>Главная</button>
+    <button>О нас</button>
+    <button>Контакты</button>
+    <button>Аккаунт</button>
+</nav>
+
+<h2>Создать пост</h2>
+<form>
+    <label for="title">Название поста:</label><br>
+    <input type="text" id="title" name="title" required><br><br>
+
+    <label for="content">Текст поста:</label><br>
+    <textarea id="content" name="content" required></textarea><br><br>
+
+    <label for="date">Дата:</label><br>
+    <input type="date" id="date" name="date" required><br><br>
+
+    <button type="submit">Опубликовать</button>
+</form>
+
+</body>
+</html>
